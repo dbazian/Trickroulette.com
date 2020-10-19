@@ -1,0 +1,101 @@
+@import "helpers/fonts";
+@import "helpers/place-val";
+
+html { font-size: 16px;
+
+    audio { display: none; }
+
+    body {
+        background-color: black;
+        color: $main-color;
+        text-align: center;
+
+        .main-title {
+            @include text-style($main-font, 7vw);
+            letter-spacing: .5vw;
+            @media only screen and (min-width: 1025px) { font-size: 4vw; };
+        }
+
+        p {
+            @include text-style($secondary-font, 5vw);
+            margin-bottom: 4vw;
+            @media only screen and (min-width: 600px) { font-size: 4vw; }
+            @media only screen and (min-width: 1025px) { font-size: 1.6vw; margin: 1.2vw; }
+        }
+
+        .main-button-container {
+            display: fixed;
+            width: 100%;
+
+            button {
+                @include text-style($main-font, 4vw);
+                @include button-style(25vw, 10vw);
+                background-color: white;
+                @media only screen and (min-width: 1025px) { height: 5vw; margin: 1vw; font-size: 3vw; }
+            }
+        }
+
+        #trick-number-container {
+            @include flex-box();
+            flex-direction: row;
+            margin-bottom: 3vw;
+
+            #ytrick { padding-right: 2vw; }
+        }
+
+        .generate-trick-button-container {
+            @include button-style(100%, 8vw, 0 0 10vw 0);
+            @include flex-box(flex, center, center, relative);
+            @media only screen and (min-width: 600px) { margin-bottom: 8vw; height: 4vw;}
+            @media only screen and (min-width: 1025px) { height: 2vw; margin-bottom: 4vw; }
+
+            .trick-box {
+                @include button-style(100%, 15vw, auto);
+                @include flex-box(flex, center, center, absolute);
+                @media only screen and (min-width: 600px) { height: 10vw; }
+                @media only screen and (min-width: 1025px) { height: 5vw; }
+    
+                #trick-name {
+                    @include text-style($main-font, 8vw);
+                    height: 8vw;
+                    width: 100%;
+                    @media only screen and (min-width: 600px) { font-size: 6vw; }
+                    @media only screen and (min-width: 1025px) { font-size: 4vw; }
+                }
+            }
+
+            #generate-trick {
+                @include text-style($main-font, 6vw);
+                @include button-style(40vw, 15vw, 0);
+                background-color: white;
+                position: absolute;
+                @media only screen and (min-width: 600px) {height: 10vw;}
+                @media only screen and (min-width: 1025px) { height: 5vw; font-size: 3vw; }
+            }
+        }
+
+        .secondary-button-container {
+
+        .yes-no-button {
+            @include text-style($main-font, 6vw);
+            @include button-style(23vw, 12vw, 0 6vw);
+            background-color: white;
+            @media only screen and (min-width: 600px) {height: 9vw;}
+            @media only screen and (min-width: 1025px) { height: 4vw; font-size: 3vw; }
+        }
+    }
+
+        #land-fail {
+            @include flex-box();
+
+            #score-counter {
+                margin-left: 4vw;
+                margin-right: 4vw;
+            }
+
+            #total-counter {
+                margin-left: 4vw;
+            }
+        }
+    }
+}

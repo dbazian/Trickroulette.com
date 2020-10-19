@@ -1,0 +1,249 @@
+@font-face {
+  font-family: 'Special Elite';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Special Elite Regular"), local("SpecialElite-Regular"), url(https://fonts.gstatic.com/s/specialelite/v10/XLYgIZbkc4JPUL5CVArUVL0ntnAOSA.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Bangers';
+  font-style: normal;
+  font-weight: 400;
+  src: local("Bangers Regular"), local("Bangers-Regular"), url(https://fonts.gstatic.com/s/bangers/v12/FeVQS0BTqb0h60ACH55Q2A.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+html {
+  font-size: 16px;
+}
+
+html audio {
+  display: none;
+}
+
+html body {
+  background-color: black;
+  color: #0dff0d;
+  text-align: center;
+}
+
+html body .main-title {
+  font-family: "Bangers", "sans-serif";
+  font-size: 7vw;
+  letter-spacing: .5vw;
+}
+
+@media only screen and (min-width: 1025px) {
+  html body .main-title {
+    font-size: 4vw;
+  }
+}
+
+html body p {
+  font-family: "Special Elite", "sans-serif";
+  font-size: 5vw;
+  margin-bottom: 4vw;
+}
+
+@media only screen and (min-width: 600px) {
+  html body p {
+    font-size: 4vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  html body p {
+    font-size: 1.6vw;
+    margin: 1.2vw;
+  }
+}
+
+html body .main-button-container {
+  display: fixed;
+  width: 100%;
+}
+
+html body .main-button-container button {
+  font-family: "Bangers", "sans-serif";
+  font-size: 4vw;
+  width: 25vw;
+  height: 10vw;
+  margin: 2vw;
+  background-color: white;
+}
+
+@media only screen and (min-width: 1025px) {
+  html body .main-button-container button {
+    height: 5vw;
+    margin: 1vw;
+    font-size: 3vw;
+  }
+}
+
+html body #trick-number-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: static;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 3vw;
+}
+
+html body #trick-number-container #ytrick {
+  padding-right: 2vw;
+}
+
+html body .generate-trick-button-container {
+  width: 100%;
+  height: 8vw;
+  margin: 0 0 10vw 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+@media only screen and (min-width: 600px) {
+  html body .generate-trick-button-container {
+    margin-bottom: 8vw;
+    height: 4vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  html body .generate-trick-button-container {
+    height: 2vw;
+    margin-bottom: 4vw;
+  }
+}
+
+html body .generate-trick-button-container .trick-box {
+  width: 100%;
+  height: 15vw;
+  margin: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+}
+
+@media only screen and (min-width: 600px) {
+  html body .generate-trick-button-container .trick-box {
+    height: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  html body .generate-trick-button-container .trick-box {
+    height: 5vw;
+  }
+}
+
+html body .generate-trick-button-container .trick-box #trick-name {
+  font-family: "Bangers", "sans-serif";
+  font-size: 8vw;
+  height: 8vw;
+  width: 100%;
+}
+
+@media only screen and (min-width: 600px) {
+  html body .generate-trick-button-container .trick-box #trick-name {
+    font-size: 6vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  html body .generate-trick-button-container .trick-box #trick-name {
+    font-size: 4vw;
+  }
+}
+
+html body .generate-trick-button-container #generate-trick {
+  font-family: "Bangers", "sans-serif";
+  font-size: 6vw;
+  width: 40vw;
+  height: 15vw;
+  margin: 0;
+  background-color: white;
+  position: absolute;
+}
+
+@media only screen and (min-width: 600px) {
+  html body .generate-trick-button-container #generate-trick {
+    height: 10vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  html body .generate-trick-button-container #generate-trick {
+    height: 5vw;
+    font-size: 3vw;
+  }
+}
+
+html body .secondary-button-container .yes-no-button {
+  font-family: "Bangers", "sans-serif";
+  font-size: 6vw;
+  width: 23vw;
+  height: 12vw;
+  margin: 0 6vw;
+  background-color: white;
+}
+
+@media only screen and (min-width: 600px) {
+  html body .secondary-button-container .yes-no-button {
+    height: 9vw;
+  }
+}
+
+@media only screen and (min-width: 1025px) {
+  html body .secondary-button-container .yes-no-button {
+    height: 4vw;
+    font-size: 3vw;
+  }
+}
+
+html body #land-fail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: static;
+}
+
+html body #land-fail #score-counter {
+  margin-left: 4vw;
+  margin-right: 4vw;
+}
+
+html body #land-fail #total-counter {
+  margin-left: 4vw;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,21 @@
+$main-color: rgb(13, 255, 13);
+$main-font: 'Bangers', 'sans-serif';
+$secondary-font: 'Special Elite', 'sans-serif';
+
+@mixin text-style($font-family: $main-font, $font-size: 6vw) {
+    font-family: $font-family;
+    font-size: $font-size;
+}
+
+@mixin button-style($width: 50%, $height: 3rem, $margin: 2vw) {
+    width: $width;
+    height: $height;
+    margin: $margin;
+}
+
+@mixin flex-box($display: flex, $justify-content: center, $align-items: center, $position: static) {
+    display: $display;
+    justify-content: $justify-content;
+    align-items: $align-items;
+    position: $position;
+}
