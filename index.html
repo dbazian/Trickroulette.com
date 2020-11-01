@@ -1,68 +1,63 @@
 <!DOCTYPE html>
 <html lang="en-US">
-
-<head>
+  <head>
     <title>Skateboard Trick Roulette</title>
-    <link rel="stylesheet" href="https://use.typekit.net/auw2hyn.css">
-    <link rel="stylesheet" type="text/css" href="SCSS/style.css">
-    <meta charset="UTF-8">
-    <meta name="description" content="Skateboard Trick Roulette - Best of 10 who can land the most tricks and win!">
-    <meta name="keywords"
-        content="Skateboard, Tricks, Roulette, Skating, Skate, Game, Skate Game, Skate Fun, Skateboarding Fun, Skateboarding Game">
-    <meta name="author" content="Darrell Bazian">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=1">
-    <meta https-equiv="x-ua-compatible" content="IE=edge">
-    <meta name="HandheldFriendly" content="true">
-</head>
+    <link rel="stylesheet" href="https://use.typekit.net/auw2hyn.css" />
+    <link rel="stylesheet" type="text/css" href="SCSS/style.css" />
+    <meta charset="UTF-8" />
+    <meta name="description" content="Skateboard Trick Roulette - Best of 10 who can land the most tricks and win!" />
+    <meta
+      name="keywords"
+      content="Skateboard, Tricks, Roulette, Skating, Skate, Game, Skate Game, Skate Fun, Skateboarding Fun, Skateboarding Game"
+    />
+    <meta name="author" content="Darrell Bazian" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3.0, minimum-scale=1" />
+    <meta https-equiv="x-ua-compatible" content="IE=edge" />
+    <meta name="HandheldFriendly" content="true" />
+  </head>
 
-<audio class="audios" id="ollie-audio" controls preload="none">
-    <source src="Audio/Ollie.mp3" type="audio/mpeg">
-</audio>
-<audio class="audios" id="cheer-audio" controls preload="none">
-    <source src="Audio/Party Horn.wav" type="audio/mpeg">
-</audio>
-<audio class="audios" id="boo-audio" controls preload="none">
-    <source src="Audio/Awwww.wav" type="audio/mpeg">
-</audio>
+  <audio class="audios" id="ollie-audio" controls preload="none">
+    <source src="Audio/ollie.mp3" type="audio/mpeg" />
+  </audio>
+  <audio class="audios" id="cheer-audio" controls preload="none">
+    <source src="Audio/horn.wav" type="audio/mpeg" />
+  </audio>
+  <audio class="audios" id="boo-audio" controls preload="none">
+    <source src="Audio/aww.wav" type="audio/mpeg" />
+  </audio>
 
-<body>
+  <body>
     <h1 class="main-title">Skateboard Trick Roulette</h1>
     <p>Choose your difficulty:</p>
-
     <div class="main-button-container">
-        <button id="beginner-button">Beginner</button>
-        <button id="intermediate-button">Intermediate</button>
-        <button id="expert-button">Expert</button>
+      <button id="beginner-button">Beginner</button>
+      <button id="intermediate-button">Intermediate</button>
+      <button id="expert-button">Expert</button>
     </div>
-
     <p>Best of 10</p>
     <div id="trick-number-container">
-        <p id="ytrick">Trick #</p>
-        <p id="trick-number">0</p>
+      <p id="ytrick">Trick #</p>
+      <p id="trick-number">0</p>
     </div>
-
     <div class="generate-trick-button-container">
-        <div class="trick-box">
-            <p id="trick-name"></p>
-        </div>
-        <button id="generate-trick">Generate Trick</button>
+      <div class="trick-box">
+        <p id="trick-name"></p>
+      </div>
+      <button id="generate-trick">Generate Trick</button>
     </div>
     <p>Did you land it?</p>
     <div class="secondary-button-container">
-        <button class="yes-no-button" id="yes-button">Yes</button>
-        <button class="yes-no-button" id="no-button">No</button>
+      <button class="yes-no-button" id="yes-button">Yes</button>
+      <button class="yes-no-button" id="no-button">No</button>
     </div>
     <p>Your Score:</p>
     <div id="land-fail">
-        <p>Landed</p>
-        <p id="score-counter">0</p>
-        <p>Of</p>
-        <p id="total-counter">0</p>
+      <p>Landed</p>
+      <p id="score-counter">0</p>
+      <p>Of</p>
+      <p id="total-counter">0</p>
     </div>
-
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script type="text/javascript" src="Java/Java.js"></script>
-
-</body>
-
+  </body>
 </html>
